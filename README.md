@@ -40,8 +40,12 @@ python extract.py --input videos/ --output data/images/ --step 15
 **Важно**: Создайте файл `classes.txt` в корне проекта с перечислением классов (по одному на строку):
 
 ```
-helmet
-vest
+fit
+no_helmet
+no_vest
+no_special_clothing
+dangerous_transport
+crane
 ```
 
 Порядок важен: первая строка = класс 0, вторая = класс 1, и т.д.
@@ -227,3 +231,4 @@ hahaton123/
 ## Дополнительная документация
 
 - `classes.txt.example` - Пример файла классов
+
