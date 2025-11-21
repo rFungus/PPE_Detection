@@ -1,0 +1,35 @@
+# Минимальные зависимости для YOLOv8 + Jupyter (CPU версия)
+
+# 🚀 Быстрая установка (CPU only) - рекомендуется для начала
+# Для CPU (без NVIDIA) - устанавливается за 2-3 минуты
+# Установка PyTorch CPU (отдельно для корректного парсинга):
+# pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+
+torch>=2.0.0
+torchvision>=0.15.0
+ultralytics>=8.0.0
+opencv-python>=4.8.0
+numpy>=1.24.0
+pillow>=10.0.0
+matplotlib>=3.7.0
+PyYAML>=6.0
+tqdm>=4.65.0
+notebook>=7.0.0
+ipywidgets>=8.0.0
+pandas>=2.0.0          # Для анализа метрик и CSV
+seaborn>=0.12.0         # Улучшенные графики для matplotlib
+scipy>=1.10.0           # Зависимость ultralytics для метрик
+
+# 🔥 GPU версия (NVIDIA CUDA) - медленная установка (10-20 минут)
+# Раскомментируйте и выполните отдельно, если у вас NVIDIA GPU:
+# pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
+
+# Инструкция по установке:
+# 1. CPU версия (быстро): 
+#    pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+#    pip install -r requirements.txt --no-deps  # без переустановки torch
+# 2. GPU версия (медленно): 
+#    pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
+#    pip install -r requirements.txt --no-deps
+# 3. Проверьте: python -c "import torch; print('CUDA:', torch.cuda.is_available())"
+

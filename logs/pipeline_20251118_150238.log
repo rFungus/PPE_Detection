@@ -1,0 +1,15 @@
+2025-11-18 15:02:38 - __main__ - INFO - ======================================================================
+2025-11-18 15:02:38 - __main__ - INFO - ПОЛНЫЙ АВТОМАТИЧЕСКИЙ ПАЙПЛАЙН ДЛЯ ДЕТЕКЦИИ СИЗ
+2025-11-18 15:02:38 - __main__ - INFO - ======================================================================
+2025-11-18 15:02:38 - __main__ - INFO - Логи сохраняются в: c:\Users\Admin\Downloads\hahaton123\logs\pipeline_20251118_150238.log
+2025-11-18 15:02:38 - __main__ - INFO - Время запуска: 2025-11-18 15:02:38
+2025-11-18 15:02:38 - __main__ - INFO - Корень проекта: C:\Users\Admin\Downloads\hahaton123
+2025-11-18 15:02:38 - __main__ - INFO - Начало импорта модулей...
+2025-11-18 15:02:38 - __main__ - INFO - Импорт config...
+2025-11-18 15:02:38 - __main__ - CRITICAL - Критическая ошибка в пайплайне: No module named 'yaml'
+Traceback (most recent call last):
+  File "c:\Users\Admin\Downloads\hahaton123\run_full_pipeline.py", line 84, in main
+    from src.utils.config import config, ProjectConfig
+  File "C:\Users\Admin\Downloads\hahaton123\src\utils\config.py", line 9, in <module>
+    import yaml
+ModuleNotFoundError: No module named 'yaml'
